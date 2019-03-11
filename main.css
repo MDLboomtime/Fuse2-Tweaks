@@ -1,0 +1,41 @@
+/* Technical Assets */
+.asset-section {
+    border: 4px dotted #faa;
+    overflow-x: auto;
+    padding: 1%;
+}
+
+/* Status Highlighting */
+.overdue-ticket {
+    color: unset;
+}
+
+/* Hide Date entered on ticket list view */
+[mobile-label="Date Entered"], [onclick="sort_column('date_entered')"] {
+    display: none;
+}
+
+/* Alternating Record Color */
+tbody tr:nth-child(odd) {
+    background-color: white;
+}
+
+/* Center columns */
+[mobile-label="Due Date"], [data-label="assigned_user"] {
+    text-align: center;
+}
+
+/* Align Column Heading */
+  td[data-label="status_name"]
+, td[data-label="state"]
+, td[data-label="priority_label"]
+, tr[data-row="header"] th
+, [data-label="status_label"]
+{
+    text-align: center;
+}
+
+/* Bigger subject line */
+#grid_body td[mobile-label="Subject Line"] {
+    max-width: 300px;
+}
